@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 function Navbar() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
 
   function handleLoginClick() {
     setIsLoggedIn(true);
@@ -11,8 +12,12 @@ function Navbar() {
     setIsLoggedIn(false);
   }
 
+  function handleMenuClick() {
+    setShowMenu(!showMenu);
+  }
+
   return (
-    <nav className="flex items-center justify-between p-4 bg-yellow-500 text-white">
+    <nav className="flex items-center justify-between flex-wrap p-4 bg-yellow-500 text-white">
       <div className="flex items-center">
         <img
           src="https://1020hivezzz.com/logo.png"
@@ -21,22 +26,52 @@ function Navbar() {
         />
         <h2 className="ml-4 text-xl font-bold">1020 Hivezzz</h2>
       </div>
-      <div>
-        {isLoggedIn ? (
-          <button
-            className="bg-black px-4 py-2 rounded-full text-white hover:bg-white hover:text-black"
-            onClick={handleLogoutClick}
+      <div className="block lg:hidden">
+        <button
+          className="flex items-center px-3 py-2 border rounded text-white border-white hover:text-white hover:border-white"
+          onClick={handleMenuClick}
+        >
+          <svg
+            className="fill-current h-3 w-3"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            Logout
-          </button>
-        ) : (
-          <button
-            className="bg-black px-4 py-2 rounded-full text-white hover:bg-white hover:text-black"
-            onClick={handleLoginClick}
-          >
-            Login
-          </button>
-        )}
+            <title>Menu</title>
+            <path
+              d="M0 3h20v2H0zm0 6h20v2H0zm0 6h20v2H0z"
+            />
+          </svg>
+        </button>
+      </div>
+      <div className={`w-full flex-grow lg:flex lg:items-center lg:w-auto ${showMenu ? 'block' : 'hidden'}`}>
+        <div className="text-sm lg:flex-grow">
+          <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4">
+            Home
+          </a>
+          <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4">
+            Services
+          </a>
+          <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white">
+            Contact
+          </a>
+        </div>
+        <div>
+          {isLoggedIn ? (
+            <button
+              className="bg-black px-4 py-2 rounded-full text-white hover:bg-white hover:text-black"
+              onClick={handleLogoutClick}
+            >
+              Logout
+            </button>
+          ) : (
+            <button
+              className="bg-black px-4 py-2 rounded-full text-white hover:bg-white hover:text-black"
+              onClick={handleLoginClick}
+            >
+              Login
+            </button>
+          )}
+        </div>
       </div>
     </nav>
   );
