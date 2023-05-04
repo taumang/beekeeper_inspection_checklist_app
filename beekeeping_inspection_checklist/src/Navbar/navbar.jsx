@@ -20,12 +20,13 @@ function Navbar() {
     <nav className="flex items-center justify-between flex-wrap p-4 bg-yellow-500 text-white">
       <div className="flex items-center">
         <img
-          src="https://1020hivezzz.com/logo.png"
+          src="../assets/Another_one_logo_1020Hivezzz.png"
           alt="1020 Hivezzz logo"
           className="w-12"
         />
-        <h2 className="ml-4 text-xl font-bold">1020 Hivezzz</h2>
+        
       </div>
+
       <div className="block lg:hidden">
         <button
           className="flex items-center px-3 py-2 border rounded text-white border-white hover:text-white hover:border-white"
