@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import LoginPage from './Login__Register/login__register'
+import LoginPage from '../Login__Register/login__register.jsx'
 
 function Navbar() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -33,16 +33,11 @@ function Navbar() {
           className="flex items-center px-3 py-2 border rounded text-white border-white hover:text-white hover:border-white"
           onClick={handleMenuClick}
         >
-          <svg
-            className="fill-current h-3 w-3"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
             <title>Menu</title>
             <path
               d="M0 3h20v2H0zm0 6h20v2H0zm0 6h20v2H0z"
             />
-          </svg>
+          
         </button>
       </div>
       <div className={`w-full flex-grow lg:flex lg:items-center lg:w-auto ${showMenu ? 'block' : 'hidden'}`}>
