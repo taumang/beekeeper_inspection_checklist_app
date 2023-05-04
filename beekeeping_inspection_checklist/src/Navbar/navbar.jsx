@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import LoginPage from './Login__Register/login__register'
 
 function Navbar() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
