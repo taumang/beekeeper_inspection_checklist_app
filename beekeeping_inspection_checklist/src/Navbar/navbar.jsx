@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import LoginPage from '../Login__Register/login__register.jsx'
+
 
 function Navbar() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -53,6 +53,7 @@ function Navbar() {
           </a>
         </div>
         <div>
+         
           {isLoggedIn ? (
             <button
               className="bg-black px-4 py-2 rounded-full text-white hover:bg-white hover:text-black"
@@ -68,6 +69,7 @@ function Navbar() {
               Login
             </button>
           )}
+       
         </div>
       </div>
     </nav>
