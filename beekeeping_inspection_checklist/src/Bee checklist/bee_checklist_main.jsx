@@ -35,23 +35,32 @@ function BeekeepingInspectionChecklist() {
     setChecklist(updatedChecklist);
   }
 
+  function handleSave() {
+    // Filter the checked items and perform your save logic here
+    const checkedItems = checklist.filter(item => item.checked);
+    console.log(checkedItems); // Replace with your save logic
+  }
   return (
     <div className="beekeeping-inspection-checklist">
       <h2 className="text-2xl font-bold mb-4">Beekeeping Inspection Checklist</h2>
       <ul>
         {checklist.map((item, index) => (
-          <li key={item.item} className="flex items-center mb-2">
+          <li key={item.item} className="flex items-center mb-2 ">
             <input
               type="checkbox"
               checked={item.checked}
               onChange={() => handleCheckboxChange(index)}
               className="mr-2"
             />
-            <span className="text-lg">{item.item}</span>
+            <span className="text-2xl">{item.item}</span>
+            <br />
+            <br />
+            <br />
             <p className="ml-2">{item.description}</p>
           </li>
         ))}
       </ul>
+      <button onClick={handleSave}>Save Checked Items</button>
     </div>
   );
 }
