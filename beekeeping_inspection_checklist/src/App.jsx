@@ -8,7 +8,10 @@ function App() {
   return (
     <div className='App'>
       <Navbar/>
-      <BeekeepingInspectionChecklist/>
+        <div className='container'>
+          
+          <BeekeepingInspectionChecklist/>
+        </div>
     </div>
   )
 }

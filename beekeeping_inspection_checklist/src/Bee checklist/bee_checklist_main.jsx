@@ -37,17 +37,18 @@ function BeekeepingInspectionChecklist() {
 
   return (
     <div className="beekeeping-inspection-checklist">
-      <h2>Beekeeping Inspection Checklist</h2>
+      <h2 className="text-2xl font-bold mb-4">Beekeeping Inspection Checklist</h2>
       <ul>
         {checklist.map((item, index) => (
-          <li key={item.item}>
+          <li key={item.item} className="flex items-center mb-2">
             <input
               type="checkbox"
               checked={item.checked}
               onChange={() => handleCheckboxChange(index)}
+              className="mr-2"
             />
-            {item.item}
-            <p>{item.description}</p>
+            <span className="text-lg">{item.item}</span>
+            <p className="ml-2">{item.description}</p>
           </li>
         ))}
       </ul>
