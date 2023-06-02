@@ -64,6 +64,7 @@ function BeekeepingInspectionChecklist() {
         ))}
       </ul>
       <button onClick={handleSave}>Save Checked Items</button>
+      {/* The submit button does save the checked sections in the console */}
     </div>
   );
 }
