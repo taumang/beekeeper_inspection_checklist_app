@@ -36,10 +36,13 @@ function BeekeepingInspectionChecklist() {
   }
 
   function handleSave() {
-    // Filter the checked items and perform your save logic here
     const checkedItems = checklist.filter(item => item.checked);
-    console.log(checkedItems); // Replace with your save logic
+    console.log(checkedItems); // For testing purposes
+  
+    // Call the Google Apps Script function to save the checked items to Google Sheets
+    google.script.run.saveChecklistData(checkedItems); // Replace 'saveChecklistData' with the appropriate function name in your Google Apps Script code
   }
+  
   return (
     <div className="beekeeping-inspection-checklist">
       <h2 className="text-2xl font-bold mb-4">Beekeeping Inspection Checklist</h2>
