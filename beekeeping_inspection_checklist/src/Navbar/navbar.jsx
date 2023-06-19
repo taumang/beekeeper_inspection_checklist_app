@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import LoginPage from "../Login__Register/login__register";
 
 
 const navBar = () => {
@@ -21,7 +22,7 @@ const navBar = () => {
     <nav className="flex items-center justify-between flex-wrap p-4 bg-yellow-500 text-white">
       <div className="flex items-center">
         <img
-          src="../assets/Another_one_logo_1020Hivezzz.png"
+          src="/beekeeping_inspection_checklist/src/assets/Another_one_logo_1020Hivezzz.png"
           alt="1020 Hivezzz logo"
           className="w-12"
         />
@@ -40,6 +41,7 @@ const navBar = () => {
           
         </button>
       </div>
+      
       <div className={`w-full flex-grow lg:flex lg:items-center lg:w-auto ${showMenu ? 'block' : 'hidden'}`}>
         <div className="text-sm lg:flex-grow flex justify-center">
           <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4">
@@ -66,7 +68,7 @@ const navBar = () => {
               className="bg-black px-4 py-2 rounded-full text-white hover:bg-white hover:text-black"
               onClick={handleLoginClick}
             >
-              Login
+              
             </button>
           )}
        
