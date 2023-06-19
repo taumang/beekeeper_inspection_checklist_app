@@ -27,7 +27,7 @@ const navBar = () => {
         />
         
       </div>
-
+     
       <div className="block lg:hidden">
         <button
           className="flex items-center px-3 py-2 border rounded text-white border-white hover:text-white hover:border-white"
@@ -41,7 +41,7 @@ const navBar = () => {
         </button>
       </div>
       <div className={`w-full flex-grow lg:flex lg:items-center lg:w-auto ${showMenu ? 'block' : 'hidden'}`}>
-        <div className="text-sm lg:flex-grow">
+        <div className="text-sm lg:flex-grow flex justify-center">
           <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4">
             Home
           </a>
