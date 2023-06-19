@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 
-function Navbar() {
+const navBar = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
 
@@ -76,4 +76,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default navBar;

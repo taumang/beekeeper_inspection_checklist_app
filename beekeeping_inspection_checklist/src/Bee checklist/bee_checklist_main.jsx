@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function BeekeepingInspectionChecklist() {
+const BeekeepingInspectionChecklist = () => {
   const [checklist, setChecklist] = useState([
     {
       item: "General Hive Appearance",
@@ -29,19 +29,29 @@ function BeekeepingInspectionChecklist() {
     },
   ]);
 
-  function handleCheckboxChange(index) {
+  const handleCheckboxChange = (index) => {
     const updatedChecklist = [...checklist];
     updatedChecklist[index].checked = !updatedChecklist[index].checked;
     setChecklist(updatedChecklist);
   }
 
-  function handleSave() {
+  const handleSave = () =>{
     const checkedItems = checklist.filter(item => item.checked);
     console.log(checkedItems); // For testing purposes
   
     // Call the Google Apps Script function to save the checked items to Google Sheets
-    google.script.run.saveChecklistData(checkedItems); // Replace 'saveChecklistData' with the appropriate function name in your Google Apps Script code
+    // google.script.run.saveChecklistData(checkedItems); // Replace 'saveChecklistData' with the appropriate function name in your Google Apps Script code
   }
+  
+
+  //DataDisplayBox function, which will be used to display the checked boxes in a little text section at the bottom of the application
+const dataDisplayBox = () =>{
+  <div style={{ border: '1px solid black', padding: '10px', margin: '10px' }}>
+      <h2>Data Captured:</h2>
+      <pre>{JSON.stringify(checkedItems, null, 2)}</pre>
+    </div>
+}
+ 
   
   return (
     <div className="beekeeping-inspection-checklist">
@@ -64,8 +74,16 @@ function BeekeepingInspectionChecklist() {
         ))}
       </ul>
       <button onClick={handleSave}>Save Checked Items</button>
+      {/* trying to display the checklist data the user checked */}
+      <p>
+        {dataDisplayBox}
+      </p>
+      
       {/* The submit button does save the checked sections in the console */}
+      
     </div>
+
+    
   );
 }
 
