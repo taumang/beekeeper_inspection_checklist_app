@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import {LoginPage,RegisterPage } from "../../pages/Login__Register/login";
-
+import {LoginPage,} from "../../pages/Login__Register/login";
+import RegisterPage from "../../pages/Login__Register/register";
 
 
 
