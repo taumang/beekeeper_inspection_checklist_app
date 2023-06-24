@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import LoginPage from "../Login__Register/login__register";
+import LoginPage from "../../pages/Login__Register/login__register";
 
 
 const navBar = () => {
@@ -68,7 +68,7 @@ const navBar = () => {
               className="bg-black px-4 py-2 rounded-full text-white hover:bg-white hover:text-black"
               onClick={handleLoginClick}
             >
-              
+              Login
             </button>
           )}
        

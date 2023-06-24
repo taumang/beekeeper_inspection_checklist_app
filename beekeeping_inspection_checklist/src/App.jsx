@@ -1,12 +1,12 @@
 import './App.css'
-import Navbar from './Navbar/navbar'
-import LoginPage from './Login__Register/login__register'
-import BeekeepingInspectionChecklist from './Bee checklist/bee_checklist_main'
+import Navbar from './components/Navbar/navbar'
+import LoginPage from './pages/Login__Register/login__register'
+import BeekeepingInspectionChecklist from './pages/Bee checklist/bee_checklist_main'
 
 function App() {
   return (
     <div className='App'>
-       <Navbar /> 
+        <Navbar />  
       <div className='container'>
         
           {/* <LoginPage /> */}
