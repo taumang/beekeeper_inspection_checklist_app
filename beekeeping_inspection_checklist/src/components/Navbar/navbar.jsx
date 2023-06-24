@@ -56,8 +56,10 @@ function handleMenuClick() {
         </div>
         <div>
         
-        <button onClick={handleLoginClick}>Toggle Login</button>
-        {isLogin ? <LoginPage /> : <RegisterPage />}
+        <button onClick={handleLoginClick}>Login</button>
+        {isLogin ? 
+          <LoginPage /> 
+        : <RegisterPage />}
          
         </div>
       </div>
@@ -65,4 +67,4 @@ function handleMenuClick() {
   );
 }
 
-
+export default navBar;

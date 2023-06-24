@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const BeekeepingInspectionChecklist = () => {
+export const BeekeepingInspectionChecklist = () => {
   const [checklist, setChecklist] = useState([
     {
       item: "General Hive Appearance",
@@ -87,4 +87,4 @@ const dataDisplayBox = () =>{
   );
 }
 
-export default BeekeepingInspectionChecklist;
+

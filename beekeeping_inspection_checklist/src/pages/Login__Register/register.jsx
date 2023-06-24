@@ -1,6 +1,6 @@
 import React from 'react'
 
-const register = () => {
+export const register = () => {
   return (
     <div>
         <h1>Register Page</h1>
@@ -9,4 +9,3 @@ const register = () => {
   )
 }
 
-export default register
