@@ -65,4 +65,4 @@ function handleMenuClick() {
   );
 }
 
-export default navBar;
+
