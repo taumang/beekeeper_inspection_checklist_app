@@ -1,22 +1,22 @@
 import React, { useState } from "react";
-import LoginPage from "../../pages/Login__Register/login__register";
+import LoginPage from "../../pages/Login__Register/login";
+import RegisterPage from "../../pages/Login__Register/register";
+
 
 
 const navBar = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLogin,setIsLogin] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
 
   function handleLoginClick() {
-    setIsLoggedIn(true);
+    setIsLogin(true);
   }
 
-  function handleLogoutClick() {
-    setIsLoggedIn(false);
-  }
-
-  function handleMenuClick() {
+ 
+function handleMenuClick() {
     setShowMenu(!showMenu);
   }
+  
 
   return (
     <nav className="flex items-center justify-between flex-wrap p-4 bg-yellow-500 text-white">
@@ -55,23 +55,10 @@ const navBar = () => {
           </a>
         </div>
         <div>
+        
+        <button onClick={handleLoginClick}>Toggle Login</button>
+        {isLogin ? <LoginPage /> : <RegisterPage />}
          
-          {isLoggedIn ? (
-            <button
-              className="bg-black px-4 py-2 rounded-full text-white hover:bg-white hover:text-black"
-              onClick={handleLogoutClick}
-            >
-              Logout
-            </button>
-          ) : (
-            <button
-              className="bg-black px-4 py-2 rounded-full text-white hover:bg-white hover:text-black"
-              onClick={handleLoginClick}
-            >
-              Login
-            </button>
-          )}
-       
         </div>
       </div>
     </nav>
