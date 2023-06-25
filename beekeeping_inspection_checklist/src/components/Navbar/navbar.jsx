@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 
 
-const navBar = () => {
+const NavBar = () => {
   const [isLogin,setIsLogin] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
 
@@ -64,4 +64,4 @@ function handleMenuClick() {
   );
 }
 
-export default navBar;
+export default NavBar;

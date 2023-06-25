@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Navbar from "K:/Main Drive/Projects/GITHUB PROJECTS/beekeeper_inspection_checklist_app/beekeeping_inspection_checklist/src/components/Navbar/navbar.jsx";
 
 
-export const BeekeepingInspectionChecklist = () => {
+const BeekeepingInspectionChecklist = () => {
   const [checklist, setChecklist] = useState([
     {
       item: "General Hive Appearance",
@@ -92,4 +92,4 @@ const dataDisplayBox = () =>{
   );
 }
 
-
+export default BeekeepingInspectionChecklist
