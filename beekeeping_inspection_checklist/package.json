@@ -9,10 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.15",
     "@supabase/auth-ui-react": "^0.4.2",
     "@supabase/supabase-js": "^2.26.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.45.0",
     "react-router-dom": "^6.13.0",
     "react-router-use-history": "^1.0.0"
   },

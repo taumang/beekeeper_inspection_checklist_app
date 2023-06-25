@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Navbar from "K:/Main Drive/Projects/GITHUB PROJECTS/beekeeper_inspection_checklist_app/beekeeping_inspection_checklist/src/components/Navbar/navbar.jsx";
+
 
 export const BeekeepingInspectionChecklist = () => {
   const [checklist, setChecklist] = useState([
@@ -55,6 +57,9 @@ const dataDisplayBox = () =>{
   
   return (
     <div className="beekeeping-inspection-checklist">
+      <div className='container'>
+          <Navbar />   
+      </div>  
       <h2 className="text-2xl font-bold mb-4">Beekeeping Inspection Checklist</h2>
       <ul>
         {checklist.map((item, index) => (

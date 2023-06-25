@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import {LoginPage,} from "../../pages/Login__Register/login";
-import RegisterPage from "../../pages/Login__Register/register";
+
 
 
 
@@ -57,9 +56,7 @@ function handleMenuClick() {
         <div>
         
         <button onClick={handleLoginClick}>Login</button>
-        {isLogin ? 
-          <LoginPage /> 
-        : <RegisterPage />}
+        
          
         </div>
       </div>
