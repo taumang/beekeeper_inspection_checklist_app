@@ -9,4 +9,164 @@
     height: 100vh;
     width: 100vw;
   } */
+
+  .desktop {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .desktop .div {
+    background-color: #ffffff;
+    border: 1px none;
+    height: 2210px;
+    position: relative;
+    width: 1440px;
+  }
+  
+  .desktop .text-wrapper {
+    color: #000000;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-size: 96px;
+    font-weight: 600;
+    left: 607px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 55px;
+    width: 288px;
+  }
+  
+  .desktop .text-wrapper-2 {
+    color: #000000;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-size: 40px;
+    font-weight: 600;
+    left: 209px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 343px;
+    width: 125px;
+  }
+  
+  .desktop .text-wrapper-3 {
+    color: #000000;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-size: 40px;
+    font-weight: 600;
+    left: 209px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 721px;
+    width: 205px;
+  }
+  
+  .desktop .line {
+    height: 1px;
+    left: 209px;
+    object-fit: cover;
+    position: absolute;
+    top: 486px;
+    width: 985px;
+  }
+  
+  .desktop .img {
+    height: 2px;
+    left: 209px;
+    object-fit: cover;
+    position: absolute;
+    top: 863px;
+    width: 997px;
+  }
+  
+  .desktop .overlap-group {
+    background-color: #ffe81a;
+    border-radius: 50px;
+    height: 127px;
+    left: 401px;
+    position: absolute;
+    top: 1049px;
+    width: 639px;
+  }
+  
+  .desktop .text-wrapper-4 {
+    color: #000000;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-size: 40px;
+    font-weight: 600;
+    left: 255px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 37px;
+    width: 275px;
+  }
+  
+  .desktop .text-wrapper-5 {
+    color: #000000;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-size: 32px;
+    font-weight: 600;
+    left: 931px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 904px;
+    width: 331px;
+  }
+  
+  .desktop .text-wrapper-6 {
+    color: #000000;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-size: 32px;
+    font-weight: 600;
+    left: 588px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 1232px;
+    width: 264px;
+  }
+  
+  .desktop .google-logo-icon-png {
+    height: 153px;
+    left: 635px;
+    object-fit: cover;
+    position: absolute;
+    top: 1348px;
+    width: 158px;
+  }
+  
+  .desktop .text-wrapper-7 {
+    color: #bbbbbb;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-size: 40px;
+    font-weight: 600;
+    left: 531px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 413px;
+    white-space: nowrap;
+    width: 379px;
+  }
+  
+  .desktop .text-wrapper-8 {
+    color: #bbbbbb;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-size: 40px;
+    font-weight: 600;
+    left: 578px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 798px;
+    white-space: nowrap;
+    width: 346px;
+  }
+  
   
